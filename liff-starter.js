@@ -4,7 +4,7 @@ window.onload = function (e) {
     });
 };
 
-/*function initializeApp(data) {
+function initializeApp(data) {
     document.getElementById('languagefield').textContent = data.language;
     document.getElementById('viewtypefield').textContent = data.context.viewType;
     document.getElementById('useridfield').textContent = data.context.userId;
@@ -22,7 +22,7 @@ window.onload = function (e) {
     // closeWindow call
     document.getElementById('closewindowbutton').addEventListener('click', function () {
         liff.closeWindow();
-    }); */
+    }); 
 
     // sendMessages call
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
