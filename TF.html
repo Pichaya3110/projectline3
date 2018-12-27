@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        
+        <title>Create Quiz</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <style>
+            body{
+                background-color: #d4d2d0;
+            }
+        </style>
+    <body>
+      
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyA4lGNRFCDKwIUnPlsIXhTh2YW8Gjk4B9g",
+    authDomain: "ah-reum.firebaseapp.com",
+    databaseURL: "https://ah-reum.firebaseio.com",
+    projectId: "ah-reum",
+    storageBucket: "ah-reum.appspot.com",
+    messagingSenderId: "807545207779"
+    };
+    firebase.initializeApp(config);
+    </script>
+        <center>
+        
+            <label id = "quizTitle">Title</label> <br>
+            <input id = "name" type = "text" name="name" placeholder="Tap to add quiz name">
+        
+        <br>
+        <div id = "allQuestions">
+            <div id="question-field">
+                <label>Question 1 </label><br>
+                <input id = "q1" type = "text" placeholder="Tap to add question">
+                <br>
+                
+                
+                
+                 
+                    <input type="radio" name="yes" id="yes" class = "form-radio" checked>
+                    <label for = yes>Yes</label>
+                    
+                    
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                    
+                    <input type="radio" name="yes" id="no" class="form-radio">
+                    <label for = no>No</label>
+               
+                            
+            </div>
+        </div>
+        <br>
+        <button onclick = "addQuestionTF()">Add another question</button>
+        <button onclick = "updateDatabaseTF()">Done</button>
+        
+        
+        
+        
+        
+        
+        </center> 
+        <script src="app.js"></script>
+        
+    </body>
+</html>
